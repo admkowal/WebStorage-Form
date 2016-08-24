@@ -5,129 +5,91 @@
         <meta charset="utf-8">
         <title>Start Kit</title>
         <link rel="stylesheet" href="css/main.css">
-
-        <script src="https://use.fontawesome.com/bc9d4784b5.js"></script>
     </head>
 
-<body>  <nav class="navbar-collapse collapse" id="navbar-header" aria-expanded="false" style="height: 0px;">
-        <div class="container-fluid">
-
-            <div class="submenu">
-                <h4>Choose Project</h4>
-                <ul class="submenu__list">
-                    <li><a href="/geo-mapfrom/index.html">Geolocation mapFrom</a></li>
-                    <li><a href="/webstorage-form/index.html">WebStorage Form</a></li>
-                </ul>
-            </div>
-
-            <div class="about">
-                <h4>About</h4>
-                <p class="about__text">Welcome in JS Library. Here you can find collection of apps built by Adam Kowal. If you found it interesting or want to help me to improve it - send me a messege!</p>
-            </div>
-
-      </div>
-    </nav>
-
-    <div class="navbar navbar-static-top navbar-dark bg-inverse">
-        <div class="container-fluid">
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar-header" aria-expanded="false">
-                ☰
-            </button>
-            <a href="#" class="navbar-brand">JS Library</a>
-        </div>
-    </div>
-
-    <header class="head">
-        <div class="container">
-            <h1 class="head__headline">WebStorage Form</h1>
-            <p>Form with usage of Web Storage</p>
-
-            <div class="github-widget" data-repo="admkowal/WebStorage-Form"></div>
-        </div>
-    </header>
-
+<body>
     <div class="container">
-      <form id="myForm">
-    <h4>Client</h4>
-    <div class="form-inline">
-      <div class="form-group">
-        <input type="text" class="form-control" name="client-name" placeholder="Name" data-error="Insert name">
-      </div>
-      <div class="form-group">
-        <input type="text" class="form-control" name="client-surname" placeholder="Surname" data-error="Insert surname">
-      </div>
-    </div>
-    <div class="form-inline">
-      <div class="form-group">
-        <input type="text" class="form-control" name="client-street" placeholder="Street" data-error="Insert street">
-      </div>
-      <div class="form-group">
-        <input type="text" class="form-control" name="client-town" placeholder="City" data-error="Insert city">
-      </div>
-      <div class="form-group">
-        <input type="text" class="form-control" name="client-zipcode" placeholder="Zip Code" data-error="Insert zip code">
-      </div>
-    </div>
-    <h4>Dane Firmy</h4>
-    <div class="form-group form-inline">
-      <input type="text" class="form-control" name="company-name" placeholder="Nazwa Firmy" data-error="Podaj nazwę firmy">
-    </div>
-    <div class="form-inline">
-      <div class="form-group">
-        <input type="text" class="form-control" name="company-street" placeholder="Ulica" data-error="Podaj ulicę firmy">
-      </div>
-      <div class="form-group">
-        <input type="text" class="form-control" name="company-town" placeholder="Miasto" data-error="Podaj miasto firmy">
-      </div>
-      <div class="form-group">
-        <input type="text" class="form-control" name="company-zipcode" placeholder="Kod Pocztowy" data-error="Podaj kod pocztowy firmy">
-      </div>
-    </div>
-    <div class="form-group form-inline">
-      <input type="text" class="form-control" name="company-nip" placeholder="NIP" data-error="Podaj prawidłowy NIP">
-    </div>
-    <div class="form-group row">
-      <div class="col-xs-2">
-        <label for="client-sum">Kwota</label>
-        <input id="client-sum" type="number" class="form-control" name="client-sum" data-error="Podaj kwotę">
-      </div>
-      <label>Stan</label>
-      <div class="radio-box" data-error="Wybierz stan">
-        <label class="radio-inline">
-        <input type="radio" name="invoiceType" id="inlineRadio1" value="option1">wystawiona
-</label>
-        <label class="radio-inline">
-        <input type="radio" name="invoiceType" id="inlineRadio2" value="option2">doręczona
-</label>
-        <label class="radio-inline">
-        <input type="radio" name="invoiceType" id="inlineRadio3" value="option3">opłacona
-</label>
-        <label class="radio-inline">
-        <input type="radio" name="invoiceType" id="inlineRadio4" value="option4">spóźniona
-</label>
-      </div>
-    </div>
-    <button type="submit" class="btn btn-primary" name="btnSubmit">Zapisz</button>
-    <small id="changeTimer"></small>
-</form>
-</div>
+        <form id="myForm">
+            
+            <div class="client-from">
+                <h4>Client</h4>
+                <div class="form-inline">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="client-name" placeholder="Name" data-error="Insert name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="client-surname" placeholder="Surname" data-error="Insert surname">
+                    </div>
+                </div>
+                <div class="form-inline">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="client-street" placeholder="Street" data-error="Insert street">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="client-town" placeholder="City" data-error="Insert city">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="client-zipcode" placeholder="Zip Code" data-error="Insert zip code">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="company-form">
+                <h4>Company</h4>
+                <div class="form-group form-inline">
+                    <input type="text" class="form-control" name="company-name" placeholder="Name" data-error="Enter company name">
+                </div>
+                <div class="form-inline">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="company-street" placeholder="Street" data-error="Enter company street">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="company-town" placeholder="City" data-error="Enter company city">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="company-zipcode" placeholder="Zip Code" data-error="Enter company Zip Code">
+                    </div>
+                 </div>
+                <div class="form-group form-inline">
+                    <input type="text" class="form-control" name="company-nip" placeholder="NIP" data-error="Enter valid NIP">
+                </div>
+            </div>
 
-    <footer class="footer">
-        <div>
-            <p class="footer__text">
-                <a class="github-button" href="https://github.com/admkowal" aria-label="Follow @admkowal on GitHub">Follow @admkowal</a>
-            </p>
+            <div class="form-group row">
+                <div class="col-xs-2">
+                    <label for="client-sum">Total</label>
+                    <input id="client-sum" type="number" class="form-control" name="client-sum" data-error="Enter total value">
+                </div>
+
+                <label>Status</label>
+                    <div class="radio-box" data-error="Choose status">
+                <label class="radio-inline">
+                    <input type="radio" name="invoiceType" id="inlineRadio1" value="option1">Generated
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="invoiceType" id="inlineRadio2" value="option2">Sent
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="invoiceType" id="inlineRadio3" value="option3">Paid
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="invoiceType" id="inlineRadio4" value="option4">Overdue
+                </label>
+            </div>
         </div>
-    </footer>
+
+            <button type="submit" class="btn btn-primary" name="btnSubmit">Zapisz</button>
+            <small id="changeTimer"></small>
+
+        </form>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/lib/jquery.githubRepoWidget.min.js"></script>
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
 
     <!-- build:js js/scripts.min.js -->
-    <script src="js/lib/webStorageForm.js"></script>
+    <script src="js/webStorageForm.js"></script>
     <!-- endbuild -->
 
 </body>

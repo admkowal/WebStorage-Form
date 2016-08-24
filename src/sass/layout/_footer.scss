@@ -4,25 +4,8 @@
 
     // *--------- TYPOGRAPHY ---------*
 
-    $footer-padding: 3rem;
-
     // *--------- COLORS ---------*
 
 // ----------------------------
 //     FOOTER STYLES
 // ----------------------------
-
-.footer {
-	@extend .text-muted, .bg-inverse;
-
-	padding-top: $footer-padding;
-	padding-bottom: $footer-padding;
-
-	div {
-		@extend .container;
-	}
-
-  	&__text {
-  		margin-bottom: .25rem;	
-  	}
-}

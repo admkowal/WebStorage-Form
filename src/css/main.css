@@ -566,7 +566,7 @@ h6, .h6 {
   font-weight: 300;
 }
 
-.display-3, .head__headline {
+.display-3 {
   font-size: 4.5rem;
   font-weight: 300;
 }
@@ -595,7 +595,7 @@ mark,
   background-color: #fcf8e3;
 }
 
-.list-unstyled, .submenu__list {
+.list-unstyled {
   padding-left: 0;
   list-style: none;
 }
@@ -745,39 +745,39 @@ pre code {
   overflow-y: scroll;
 }
 
-.container, .footer div {
+.container {
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.container::after, .footer div::after {
+.container::after {
   content: "";
   display: table;
   clear: both;
 }
 
 @media (min-width: 544px) {
-  .container, .footer div {
+  .container {
     max-width: 576px;
   }
 }
 
 @media (min-width: 768px) {
-  .container, .footer div {
+  .container {
     max-width: 720px;
   }
 }
 
 @media (min-width: 992px) {
-  .container, .footer div {
+  .container {
     max-width: 940px;
   }
 }
 
 @media (min-width: 1200px) {
-  .container, .footer div {
+  .container {
     max-width: 1140px;
   }
 }
@@ -4364,7 +4364,7 @@ input[type="button"].btn-block {
   border-top-right-radius: 0.2rem;
 }
 
-.jumbotron, .head {
+.jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
   background-color: #eceeef;
@@ -4372,7 +4372,7 @@ input[type="button"].btn-block {
 }
 
 @media (min-width: 544px) {
-  .jumbotron, .head {
+  .jumbotron {
     padding: 4rem 2rem;
   }
 }
@@ -5607,7 +5607,7 @@ button.close {
 /* --------------------------------------------------------
    Utility classes
    -------------------------------------------------------- */
-.bg-inverse, .footer {
+.bg-inverse {
   background-color: #373a3c;
 }
 
@@ -6113,11 +6113,11 @@ a.bg-danger:focus, a.bg-danger:hover {
   font-style: italic;
 }
 
-.text-muted, .about__text, .footer {
+.text-muted {
   color: #818a91 !important;
 }
 
-a.text-muted:focus, a.about__text:focus, a.footer:focus, a.text-muted:hover, a.about__text:hover, a.footer:hover {
+a.text-muted:focus, a.text-muted:hover {
   color: #687077;
 }
 
@@ -6265,7 +6265,7 @@ a.text-danger:focus, a.text-danger:hover {
   }
 }
 
-.bg-inverse, .footer {
+.bg-inverse {
   background-color: #373a3c;
 }
 
@@ -6753,11 +6753,11 @@ a.bg-danger:focus, a.bg-danger:hover {
   font-style: italic;
 }
 
-.text-muted, .about__text, .footer {
+.text-muted {
   color: #818a91 !important;
 }
 
-a.text-muted:focus, a.about__text:focus, a.footer:focus, a.text-muted:hover, a.about__text:hover, a.footer:hover {
+a.text-muted:focus, a.text-muted:hover {
   color: #687077;
 }
 
@@ -6908,79 +6908,27 @@ a.text-danger:focus, a.text-danger:hover {
 /* --------------------------------------------------------
    Custom application specific styles
    -------------------------------------------------------- */
-.navbar-collapse .container-fluid {
-  padding: 2rem 2.5rem;
-  border-bottom: 1px solid #55595c;
-}
-
-.about {
-  float: left;
-  max-width: 30rem;
-  margin-right: 3rem;
-}
-
-.about h4 {
-  color: #373a3c;
-}
-
-.submenu {
-  float: left;
-  margin-right: 3rem;
-}
-
-.submenu h4 {
-  color: #373a3c;
-}
-
-.submenu__list {
-  float: left;
-  margin-right: 3rem;
-}
-
-.submenu__list a {
-  color: #818a91;
-}
-
-.submenu__list a:hover {
-  color: #373a3c;
-  text-decoration: none;
-}
-
-.radio-box {
-  padding-top: 6px;
-}
-
-small {
-  padding-left: 20px;
+.company-form, .client-from {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .form-inline {
   margin-bottom: 5px;
 }
 
-.container, .footer div {
-  padding-bottom: 35px;
+.radio-box {
+  padding-top: 6px;
 }
 
-.head {
-  padding: 3rem 0 0 0;
-  margin-bottom: 0;
-  background-color: #fff;
+.radio-box .radio-inline {
+  padding-right: 10px;
 }
 
-.head p:last-child {
-  margin-bottom: 0;
+.radio-box .radio-inline input {
+  margin-right: 5px;
 }
 
-.footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.footer__text {
-  margin-bottom: .25rem;
-}
-
-.hidden {
-  display: none;
+small {
+  padding-left: 20px;
 }

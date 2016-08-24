@@ -9,19 +9,3 @@
 // ----------------------------
 //     HEADER STYLES
 // ----------------------------
-
-.head {
-	@extend .jumbotron;
-	
-	padding: 3rem 0 0 0;
-  	margin-bottom: 0;
-  	background-color: #fff;
-
-	&__headline {
-		@extend .display-3;
-	}
-
-  	p:last-child {
-  		margin-bottom: 0;	
-  	}
-}

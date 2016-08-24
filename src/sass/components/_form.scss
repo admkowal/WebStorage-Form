@@ -1,11 +1,36 @@
+// -------------------------------
+//     NAV VARIABLES
+// -------------------------------
+
+    // *--------- TYPOGRAPHY ---------*
+
+    // *--------- COLORS ---------*
+
+// ----------------------------
+//     NAV STYLES
+// ----------------------------
+
+.company-form, .client-from {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.form-inline{
+	margin-bottom: 5px;
+}
+
 .radio-box{
-  padding-top: 6px;
+	padding-top: 6px;
+
+  	.radio-inline {
+		padding-right: 10px; 
+
+		input {
+			margin-right: 5px;
+		}
+  	}
 }
 
 small {
   padding-left: 20px;
-}
-
-.form-inline{
-  margin-bottom: 5px;
 }
